@@ -29,7 +29,39 @@ body{
     height: 100%;
     display: flex;
     justify-content:center;
+    align-items: center;
    
+}
+
+
+.menu i{ 
+    top:15px;
+    right:15px;
+    padding:5px;
+    background:#383E4C;
+    color:white;
+    border:5px;
+    z-index: 2;
+    font-size:2em;
+    border-radius:10px;
+    position: fixed;
+    display: none;
+
+    
+}
+
+.scrollUp i{
+    bottom: 15px;
+    right:15px;
+    padding:5px;
+    background:#383E4C;
+    color:white;
+    border:5px;
+    z-index: 2;
+    font-size:2em;
+    border-radius:10px;
+    position: fixed;
+    display: none;
 }
 
 .btn{
@@ -51,36 +83,26 @@ body{
     background: #49505F;
   }
 
-.menu-toggle{
-    height: 40px;
-    width:40px;
-    background-color:black;
-    color:white;
-    float: right;
-    margin-right:5px;
-    display:none;
-}
-.menu-toggle i{
-    color:white;
-    font-size:3em;
-}
+
 /* banner1 */
 #banner{
     height: 630px;
     width:100%;
     background-image:url('../img/bg-1.jpg');
-    
     background-position: center;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+   
 
     
+    background-size: cover;
 }
+
 .banner1-content{
+    height:75%;
     display: flex;
     flex-direction: column;
     justify-content:center;
@@ -409,6 +431,14 @@ textarea::-webkit-input-placeholder{
         width:100%;
     }
     
+    .menu i{
+        display: flex;
+    }
+
+    .scrollUp i{
+        display: flex;
+
+    }
         
     #features{
     margin-top:0px;
@@ -516,6 +546,7 @@ textarea::-webkit-input-placeholder{
    
     #banner{
         width: 100%;
+       
         background-size: cover;
     }
     .smallcard{
